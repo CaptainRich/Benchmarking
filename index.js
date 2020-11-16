@@ -19,10 +19,11 @@ const suite = new Benchmark.Suite;
 
 suite
   .add('Linear search', function() {
-    // benchmark generating a random number
+    // Benchmark based on a liner search
     linearSearch(numbers, target);;
   })
   .add('Binary search', function() {
+    // Benchmark based on a binary search
     binarySearch(numbers, target, 0, numbers.length-1)
   })
   .on('complete', function() {
